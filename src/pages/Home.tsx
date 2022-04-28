@@ -1,46 +1,43 @@
-import { assertValidExecutionArguments } from 'graphql/execution/execute';
-import React, { useState } from 'react'
-import axios from "axios";
+// import { assertValidExecutionArguments } from 'graphql/execution/execute';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Agent, Agents } from '../types/valorant';
 
-
-const defaultEndpoint = "https://valorant-api.com/v1/agents"
-
+const defaultEndpoint = 'https://valorant-api.com/v1/agents';
 
 const Home = () => {
-    const [agents, setAgents] = React.useState(null);
+  const [agents, setAgents] = useState<Agent[]>();
 
-    React.useEffect(() => {
-        axios.get(defaultEndpoint).then((response) => {
-            setAgents(response.data);
-        });
-    }, []);
+  useEffect(() => {
+    axios.get(defaultEndpoint).then((response) => {
+      const _data: Agents = response.data;
+      setAgents(_data.data);
+    });
+  }, []);
 
-    console.log(agents);
+  return (
+    <>
+      <ul>
+        {agents &&
+          agents.map((agent: Agent, index: number) => {
+            return (
+              <li key={agent.uuid}>
+                <div className='grid max-w-[3/4vw] sm:max-w-[360px]'>
+                  <img
+                    className='max-w-40 w-full flex'
+                    src={agent.fullPortrait!}
+                    alt={`${agent.displayName}Portrait`}
+                  />{' '}
+                  <span className='border text-center'>
+                    {agent.displayName}
+                  </span>
+                </div>
+              </li>
+            );
+          })}
+      </ul>
+    </>
+  );
+};
 
-    if (!agents) return null;
-    const { data = [] } = agents;
-
-
-    return (
-        <>
-            <main >
-                {data.map(i => {
-                    const { uuid, displayName, fullPortrait } = i;
-                    return (
-                        <li key={uuid}>
-                            <a href="https://nextjs.org/docs">
-                                {fullPortrait && <h1>{displayName}</h1>}
-                            </a>
-                        </li>
-                    )
-                })}
-
-
-            </main >
-
-        </>
-
-    )
-}
-
-export default Home
+export default Home;

@@ -1,30 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/tailwind.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
+import ReactDOM from 'react-dom';
+import './styles/tailwind.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
-//pages & Components
-import About from "./pages/About";
-import Navbar from "./components/navbar";
-import Footer from "./components/Footer";
-
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(
-    <BrowserRouter>
-        <Navbar />
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="./pages/About" element={<About />} />
-        </Routes>
-        <Footer />
-    </BrowserRouter>,
-    rootElement
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  rootElement
 );
 
 // If you want your app to work offline and load faster, you can change

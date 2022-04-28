@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Agent, Agents } from '../types/valorant';
+import Card from "../components//Card"
 
 const defaultEndpoint = 'https://valorant-api.com/v1/agents';
 
@@ -20,20 +21,7 @@ const Home = () => {
             <ul>
                 {agents &&
                     agents.map((agent: Agent, index: number) => {
-                        return (
-                            <li key={agent.uuid}>
-                                <div className='grid max-w-[3/4vw] sm:max-w-[360px]'>
-                                    <img
-                                        className='max-w-40 w-full flex'
-                                        src={agent.fullPortrait!}
-                                        alt={`${agent.displayName}Portrait`}
-                                    />{' '}
-                                    <span className='border text-center'>
-                                        {agent.displayName}
-                                    </span>
-                                </div>
-                            </li>
-                        );
+                        return <Card agent={agent} />
                     })}
             </ul>
         </>

@@ -1,14 +1,14 @@
 import { Agent } from '../types/agentTypes'
 
-const Card = (props: Agent): any => {
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-        <a>
-            <img className="rounded-t-lg" src={props.fullPortrait || ''} alt={props.displayName} />
-        </a>
-        <div className="p-5">
-            <p>{props.displayName}</p>
-        </div>
-    </div>
+const Card = (props: { agent: Agent }): any => {
+    <li key={props.agent.uuid} className='grid max-w-[3/4vw] sm:max-w-[360px]'>
+        <img
+            className='max-w-40 w-full flex'
+            src={props.agent.fullPortrait!}
+            alt={`${props.agent.displayName}Portrait`}
+        />{' '}
+        <span className='border text-center'>{props.agent.displayName}</span>
+    </li>
 }
 
 export default Card;

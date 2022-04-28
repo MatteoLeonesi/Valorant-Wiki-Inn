@@ -1,42 +1,43 @@
-import React, { useState } from 'react'
-import axios from "axios";
-import { Agents } from '../types/agentTypes'
-import Card from "../components/Card"
+// import { assertValidExecutionArguments } from 'graphql/execution/execute';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Agent, Agents } from '../types/valorant';
 
-const defaultEndpoint = "https://valorant-api.com/v1/agents"
+const defaultEndpoint = 'https://valorant-api.com/v1/agents';
 
 const Home = () => {
-    const [agents, setAgents] = React.useState<Agents | null>(null);
+    const [agents, setAgents] = useState<Agent[]>();
 
-    React.useEffect(() => {
+    useEffect(() => {
         axios.get(defaultEndpoint).then((response) => {
-            setAgents(response.data);
+            const _data: Agents = response.data;
+            setAgents(_data.data);
         });
     }, []);
 
-    console.log(agents);
-
-    if (!agents) return null;
-    const { data = [] } = agents;
-
-
     return (
-        <div className="bg-blue-200 ... m-6 p-10 rounded-lg">
-            <main >
-                {data.map(i => {
-                    const { uuid, displayName, fullPortrait } = i;
-                    return (
-                        <li key={uuid}>
-                            <a href='#'>
-                                {fullPortrait && <Card displayName={displayName} fullPortrait={fullPortrait} />}
-                            </a>
-                        </li>
-                    )
-                })}
-            </main >
-        </div>
+        <>
+            <ul>
+                {agents &&
+                    agents.map((agent: Agent, index: number) => {
+                        return (
+                            <li key={agent.uuid}>
+                                <div className='grid max-w-[3/4vw] sm:max-w-[360px]'>
+                                    <img
+                                        className='max-w-40 w-full flex'
+                                        src={agent.fullPortrait!}
+                                        alt={`${agent.displayName}Portrait`}
+                                    />{' '}
+                                    <span className='border text-center'>
+                                        {agent.displayName}
+                                    </span>
+                                </div>
+                            </li>
+                        );
+                    })}
+            </ul>
+        </>
+    );
+};
 
-    )
-}
-
-export default Home
+export default Home;

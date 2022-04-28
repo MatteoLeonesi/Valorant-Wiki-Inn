@@ -12,6 +12,7 @@ import {
 //pages & Components
 import About from "./pages/About";
 import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -21,6 +22,7 @@ ReactDOM.render(
             <Route path="/" element={<App />} />
             <Route path="./pages/About" element={<About />} />
         </Routes>
+        <Footer />
     </BrowserRouter>,
     rootElement
 );

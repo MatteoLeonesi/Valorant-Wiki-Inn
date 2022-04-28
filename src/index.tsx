@@ -8,11 +8,15 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+
+//pages & Components
 import About from "./pages/About";
+import Navbar from "./components/navbar";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
     <BrowserRouter>
+        <Navbar />
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="./pages/About" element={<About />} />

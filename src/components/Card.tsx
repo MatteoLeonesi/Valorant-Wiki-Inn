@@ -3,7 +3,7 @@ import { Agent } from '../types/agentTypes'
 const Card = (props: { agent: Agent }): any => {
     return (
 
-        <div className=" overflow-hidden shadow-lg  shadow-gray-500/50 grid max-w-[3/4vw] sm:max-w-[360px] rounded-lg	 ">
+        <div className=" overflow-hidden shadow-lg  grid max-w-[3/4vw] sm:max-w-[360px] rounded-lg	 ">
             {props.agent.fullPortrait &&
                 <img
                     className='max-w-40 w-full flex'
@@ -16,12 +16,6 @@ const Card = (props: { agent: Agent }): any => {
                     <span className=' text-center'>{props.agent.displayName}</span>
                 }
             </div>
-
-
-
-
-
-
         </div>
     );
 }

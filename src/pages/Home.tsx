@@ -17,14 +17,15 @@ const Home = () => {
     }, []);
 
     return (
-        <>
-            <ul>
+        <div className=' mr-10 ml-10 mt-5 p-10 rounded-md '>
+            <div className='grid grid-cols-1 gap-10  lg:grid-cols-4  md:grid-cols-2 ' >
                 {agents &&
                     agents.map((agent: Agent, index: number) => {
                         return <Card agent={agent} />
-                    })}
-            </ul>
-        </>
+                    })
+                }
+            </div >
+        </div >
     );
 };
 

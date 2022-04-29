@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    fontFamily: {
+      'sign': ['Water Brush', 'cursive'],
+      'mono': ['SFMono-Regular', 'Menlo',],
+    },
     extend: {},
   },
   plugins: [],

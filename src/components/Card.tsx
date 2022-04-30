@@ -1,6 +1,10 @@
+import { ReactNode, useState } from 'react';
 import { Agent } from '../types/agentTypes'
 
 const Card = (props: { agent: Agent }): any => {
+
+    const [openPopUp, setOpenPopUp] = useState<boolean>(false);
+
     return (
 
         <div className=" overflow-hidden shadow-lg  grid max-w-[3/4vw] sm:max-w-[360px] rounded-lg	 ">
@@ -13,8 +17,13 @@ const Card = (props: { agent: Agent }): any => {
             }
             <div className="px-6 pt-4 pb-2 text-center  font-semibold  font-mono ">
                 {props.agent.fullPortrait &&
-                    <span className=' text-center'>{props.agent.displayName}</span>
+                    <button onClick={() => setOpenPopUp(!openPopUp)} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                        {props.agent.displayName}
+                    </button>
                 }
+            </div>
+            <div>
+
             </div>
         </div>
     );

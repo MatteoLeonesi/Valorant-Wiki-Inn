@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className="text-center text-white 	flex-grow">
+        <footer className="text-center text-white p-4	flex-grow">
             <div className="text-center p-3 background-color: rgba(0, 0, 0, 0.2)">
                 <a href="mailto:matteo.leonesi@gmail.com?subject=" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                     <svg aria-hidden="true"

@@ -30,7 +30,10 @@ const Home = () => {
             {loading ? <Spinner /> : <div className='grid grid-cols-1 gap-10  lg:grid-cols-4  md:grid-cols-2 ' >
                 {agents &&
                     agents.map((agent: Agent, index: number) => {
-                        return <Card agent={agent} />
+                        //TODO duplicated data in the /agents api, 2 sova , to fix it 
+                        if (agent.displayName !== "Sova") {
+                            return <Card agent={agent} />
+                        }
                     })
                 }
             </div >}

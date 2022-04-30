@@ -33,7 +33,7 @@ function Navbar() {
               <span className='px-4 hover:text-gray-800'>Home</span>
             </Link>
             <Link to='/about'>
-              <span className='px-4 hover:text-gray-800'>Abouts</span>
+              <span className='px-4 hover:text-gray-800'>About Us</span>
             </Link>
             <Link to='/'>
               <span className='px-4 hover:text-gray-800'>Agents</span>

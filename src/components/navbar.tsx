@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-neutral-900 text-black flex ...'>
       <div className='container mx-auto px-6 py-2 flex justify-between items-center grow  '>
-        <span className='font-bold text-2xl lg:text-4xl'>Valorant Wiki </span>
+        <span className='font-bold text-2xl lg:text-4xl'>Valorant Wiki ✨ </span>
         <div className='block lg:hidden'>
           <button
             onClick={handleClick}
@@ -30,16 +30,13 @@ function Navbar() {
         <div className={`${active ? '' : 'hidden'} lg:block`}>
           <ul className='inline-flex'>
             <Link to='/'>
-              <span className='px-4 hover:text-gray-800'>Home</span>
-            </Link>
-            <Link to='/about'>
-              <span className='px-4 hover:text-gray-800'>About Us</span>
-            </Link>
-            <Link to='/'>
               <span className='px-4 hover:text-gray-800'>Agents</span>
             </Link>
             <Link to='/'>
               <span className='px-4 hover:text-gray-800'>Weapons</span>
+            </Link>
+            <Link to='/about'>
+              <span className='px-4 hover:text-gray-800'>About Us</span>
             </Link>
           </ul>
         </div>

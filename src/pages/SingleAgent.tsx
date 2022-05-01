@@ -1,8 +1,10 @@
 import React from 'react'
 
-function SingleAgent() {
+
+
+function SingleAgent(props: any) {
     return (
-        <div>SingleAgent</div>
+        <h1>ciao</h1>
     )
 }
 

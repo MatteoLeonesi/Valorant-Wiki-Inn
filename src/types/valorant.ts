@@ -27,6 +27,20 @@ export type Agent = {
   voiceLine: VoiceLine;
 };
 
+export type Weapons = {
+  status: number;
+  data: Weapon[];
+};
+
+export type Weapon = {
+  uuid: string;
+  displayName: string;
+  description?: string;
+  displayIcon?: string
+  skins?: Skins[] | null
+};
+
+
 export type Role = {
   uuid: string;
   displayName: string;
@@ -34,12 +48,18 @@ export type Role = {
   displayIcon: string;
   assetPath: string;
 };
+
 export type Abilities = {
   slot: string;
   displayName: string;
   description: string;
   displayIcon?: string | null;
 };
+
+export type Skins = {
+  fullRender: string;
+  chromas: string,
+}
 export type VoiceLine = {
   minDuration: number;
   maxDuration: number;

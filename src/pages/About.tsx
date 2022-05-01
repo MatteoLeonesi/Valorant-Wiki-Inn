@@ -2,13 +2,13 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' mr-10 ml-10 mt-5 p-10 rounded-lg shadow-gray-400/80 overflow-hidden shadow-lg '>
-            <div className="container mx-auto px-6 md:px-12 xl:px-32 ">
+        <div className=' mr-10 ml-10 mt-5 p-10 rounded-lg shadow-gray-400/80 overflow-hidden shadow-lg justify-center 		'>
+            <div className="container mx-auto px-6 md:px-12 xl:px-32">
                 <div className="mb-16 text-center">
                     <h2 className="mb-4 text-center text-2xl text-gray-900 font-bold md:text-4xl">Team</h2>
                     <p className="text-gray-600 lg:w-8/12 lg:mx-auto">website created with the aim of study Valorant api</p>
                 </div>
-                <div className="grid gap-12 items-center md:grid-cols-2   ">
+                <div className="grid gap-12 items-center md:grid-cols-2 ">
                     <div className="space-y-4 text-center ">
                         <img className="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64  overflow-hidden shadow-lg"
                             src="https://www.opgt.it/wp-content/uploads/2018/07/usop.jpg" alt="woman" loading="lazy" width="640" height="805" />
@@ -129,6 +129,7 @@ function About() {
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div >

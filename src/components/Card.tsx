@@ -39,9 +39,7 @@ const Card = (props: { agent: Agent }): any => {
             description: props.agent.description,
             developerName: props.agent.developerName,
             displayIcon: props.agent.displayIcon,
-            abilities: props.agent.abilities,
-            role: props.agent.role?.displayName,
-
+            abilities: props.agent.abilities
           }}
           key={props.agent.uuid}
         >
@@ -50,6 +48,7 @@ const Card = (props: { agent: Agent }): any => {
       </span>
 
     </div>
-}
+  );
+};
 
 export default Card;

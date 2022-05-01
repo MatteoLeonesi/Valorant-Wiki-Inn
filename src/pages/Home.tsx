@@ -22,11 +22,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className=' mr-10 ml-10 mt-5 p-10 rounded-lg shadow-gray-400/80 overflow-hidden shadow-lg '>
+    <div className='breakpoints-default py-6 lg:py-10 px-4 lg:px-8 overflow-hidden '>
       {loading ? (
         <Spinner />
       ) : (
-        <div className='grid grid-cols-1 gap-10  lg:grid-cols-4  md:grid-cols-2 '>
+        <div className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
           {agents &&
             agents.map((agent: Agent, index: number) => {
               // TODO duplicated data in the /agents api, 2 sova.

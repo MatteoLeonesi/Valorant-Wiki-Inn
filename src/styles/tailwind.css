@@ -27,3 +27,7 @@
 }
 
 @tailwind utilities;
+
+html {
+  @apply overflow-y-scroll scroll-smooth;
+}

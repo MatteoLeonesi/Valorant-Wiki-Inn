@@ -1,48 +1,22 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
-import { useState } from 'react';
+import NavMenu from './NavMenu';
+import NavItem from './NavItem';
 
-function Navbar() {
-  const [active, setActive] = useState<boolean>(false);
-
-  const handleClick = () => {
-    setActive(!active);
-    console.log('clicked');
-  };
-
+const Navbar = () => {
   return (
-    <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-neutral-900 text-black flex ...'>
-      <div className='container mx-auto px-6 py-2 flex justify-between items-center grow  '>
-        <span className='font-bold text-2xl lg:text-4xl'>Valorant Wiki ✨ </span>
-        <div className='block lg:hidden'>
-          <button
-            onClick={handleClick}
-            className='flex items-center  px-3 py-2  rounded   appearance-none focus:outline-none'>
-            <svg
-              className='fill-current h-3 w-3'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'>
-              <title>Menu</title>
-              <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-            </svg>
-          </button>
-        </div>
-        <div className={`${active ? '' : 'hidden'} lg:block`}>
-          <ul className='inline-flex'>
-            <Link to='/'>
-              <span className='px-4 hover:text-gray-800'>Agents</span>
-            </Link>
-            <Link to='/'>
-              <span className='px-4 hover:text-gray-800'>Weapons</span>
-            </Link>
-            <Link to='/about'>
-              <span className='px-4 hover:text-gray-800'>About Us</span>
-            </Link>
-          </ul>
-        </div>
+    <nav className='z-10 fixed top-0 inset-x-0 h-[63px] sm:h-[79px] border-b nav inline-flex items-center drop-shadow-sm'>
+      <div className='breakpoints-default mx-auto w-full h-full inline-flex px-4 lg:px-8 justify-between items-center relative'>
+        <span className='select-none cursor-pointer font-bold text-2xl md:text-2xl lg:text-3xl'>
+          Valorant wiki
+        </span>
+
+        <NavMenu>
+          <NavItem to='/' label='Agents' />
+          <NavItem to='/weapons' label='Weapons' />
+          <NavItem to='/about' label='About' />
+        </NavMenu>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

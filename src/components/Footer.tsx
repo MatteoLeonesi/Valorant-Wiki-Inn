@@ -6,14 +6,14 @@ const Footer = () => {
       <ul className='breakpoints-default flex justify-between items-center w-full'>
         <LegalPolicy />
         <li className='grid gap-4  text-center'>
-          <span className='group select-none whitespace-nowrap text-sm bg-neutral-900 dark:bg-neutral-300 text-neutral-300 dark:text-black dark:font-semibold px-3 py-2 hover:-translate-y-1 transition-all duration-150'>
+          <span className='group select-none whitespace-nowrap text-sm bg-neutral-900 dark:bg-neutral-300 text-neutral-300 dark:text-black dark:font-semibold px-3 py-2 hover:-translate-y-1 transition-all duration-150 rounded-md'>
             <a
               href='https://github.com/MatteoLeonesi'
-              className='group-hover:text-white dark:group-hover:text-neutral-800 w-fit'>
+              className='group-hover:text-white dark:group-hover:text-neutral-800 w-fit radi'>
               Github Repository
             </a>
           </span>
-          <span className='select-text whitespace-nowrap text-neutral-700 dark:text-neutral-400'>
+          <span className='select-text whitespace-nowrap text-neutral-700 dark:text-neutral-400 	'>
             © 2022 Matteo Leonesi
           </span>
         </li>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, Outlet } from "react-router-dom";
 import { Agent } from '../types/agentTypes';
 
 const Card = (props: { agent: Agent }): any => {
@@ -6,7 +7,7 @@ const Card = (props: { agent: Agent }): any => {
   //https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/fullportrait.png
   return (
     <div
-      className='glass dark:bg-neutral-900 rounded-lg cursor-pointer relative w-full min-h-[320px] overflow-hidden'
+      className='glass dark:bg-neutral-900 rounded-lg cursor-pointer relative w-full min-h-[320px] overflow-hidden 	shadow-xl'
       onClick={() => setOpenPopUp(!openPopUp)}>
       {/* <img
         className='absolute w-full h-full'
@@ -24,6 +25,8 @@ const Card = (props: { agent: Agent }): any => {
         <p className=' text-7xl'>{props.agent.displayName}</p>
       </span>
 
+
+
       <div
         className='w-full h-full bg-origin-content bg-cover scale-150 -translate-x-[18%] translate-y-[15%] md:translate-y-[18%] transition-all duration-300'
         style={{
@@ -39,9 +42,16 @@ const Card = (props: { agent: Agent }): any => {
           {props.agent.description}
         </p> */}
 
-      <span className='absolute bottom-4 left-3 text-white drop-shadow dark:text-white text-3xl font-raleway font-black uppercase'>
-        {props.agent.displayName}
+      <span className='absolute bottom-1 left-1 text-white drop-shadow dark:text-white text-3xl font-raleway font-black uppercase'>
+        <Link
+          style={{ display: "block", margin: "1rem 0" }}
+          to={`/agentId/${props.agent.displayName}`}
+          key={props.agent.uuid}
+        >
+          {props.agent.displayName}
+        </Link>
       </span>
+
     </div>
   );
 };

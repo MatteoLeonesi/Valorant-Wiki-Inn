@@ -13,6 +13,16 @@ const Card = (props: { agent: Agent }): any => {
         src={props.agent.fullPortrait!}
         alt={`${props.agent.displayName}Portrait`}
       /> */}
+      <span className='absolute -translate-x-8 inset-0 text-white dark:text-white font-raleway font-black uppercase opacity-25 select-none'>
+        <span className='whitespace-nowrap space-x-2'>
+          <span className=' text-3xl'>{props.agent.displayName}</span>
+          <span className=' text-6xl'>{props.agent.displayName}</span>
+        </span>
+        <p className=' text-8xl'>{props.agent.displayName}</p>
+        <p className=' text-4xl'>{props.agent.displayName}</p>
+        <p className=' text-6xl'>{props.agent.displayName}</p>
+        <p className=' text-7xl'>{props.agent.displayName}</p>
+      </span>
 
       <div
         className='w-full h-full bg-origin-content bg-cover scale-150 -translate-x-[18%] translate-y-[15%] md:translate-y-[18%] transition-all duration-300'
@@ -29,9 +39,8 @@ const Card = (props: { agent: Agent }): any => {
           {props.agent.description}
         </p> */}
 
-      <span className='text-black dark:text-white text-sm font-rokkitt font-bold'>
-        {/* {props.agent.displayName} */}
-        {/* {`url(${props.agent.fullPortrait})`} */}
+      <span className='absolute bottom-4 left-3 text-white drop-shadow dark:text-white text-3xl font-raleway font-black uppercase'>
+        {props.agent.displayName}
       </span>
     </div>
   );

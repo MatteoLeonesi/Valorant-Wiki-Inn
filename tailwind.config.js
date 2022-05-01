@@ -4,7 +4,7 @@ module.exports = {
       fontFamily: {
         sign: ['Water Brush', 'cursive'],
         mono: ['SFMono-Regular', 'Menlo'],
-        rokkitt: ['Rokkitt'],
+        raleway: ['Raleway'],
         source: ['Source Sans Pro'],
       },
       backgroundImage: {

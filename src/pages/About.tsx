@@ -2,11 +2,11 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' mr-10 ml-10 mt-5 p-10 rounded-lg shadow-gray-400/80 overflow-hidden shadow-lg justify-center 		'>
-            <div className="container mx-auto px-6 md:px-12 xl:px-32">
+        <div className=' mr-10 ml-10 m-10 p-10 rounded-lg  overflow-hidden shadow-lg justify-center mx-auto dark:shadow-indigo-500/50'>
+            <div className=" container mx-auto pb-10 px-6 md:px-12 xl:px-32" >
                 <div className="mb-16 text-center">
-                    <h2 className="mb-4 text-center text-2xl text-gray-900 font-bold md:text-4xl">Team</h2>
-                    <p className="text-gray-600 lg:w-8/12 lg:mx-auto">website created with the aim of study Valorant api</p>
+                    <h2 className="mb-4 text-center text-2xl font-bold md:text-4xl">Team</h2>
+                    <p className=" lg:w-8/12 lg:mx-auto">We ❤️ Riot Games Legal Jibber Jabber Policy</p>
                 </div>
                 <div className="grid gap-12 items-center md:grid-cols-2 ">
                     <div className="space-y-4 text-center ">
@@ -15,7 +15,7 @@ function About() {
                         <div>
                             <h4 className="text-2xl">Matteo Leonesi</h4>
                             <div className="text-center p-3 background-color: rgba(0, 0, 0, 0.2)">
-                                <a href="mailto:matteo.leonesi@gmail.com?subject=" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="mailto:matteo.leonesi@gmail.com?subject=" type="button" className="rounded-full border-2 border-black text-black  dark:bg-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -32,7 +32,7 @@ function About() {
                                     </svg>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/matteo-leonesi-228867138/" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="https://www.linkedin.com/in/matteo-leonesi-228867138/" type="button" className="rounded-full border-2 border-black dark:bg-white  text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -49,7 +49,7 @@ function About() {
                                     </svg>
                                 </a>
 
-                                <a href="https://github.com/MatteoLeonesi" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="https://github.com/MatteoLeonesi" type="button" className="rounded-full border-2 border-black dark:bg-white  text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -75,7 +75,7 @@ function About() {
                         <div>
                             <h4 className="text-2xl">Cupacchino</h4>
                             <div className="text-center p-3 background-color: rgba(0, 0, 0, 0.2)">
-                                <a href="mailto:matteo.leonesi@gmail.com?subject=" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="mailto:matteo.leonesi@gmail.com?subject=" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black dark:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -92,7 +92,7 @@ function About() {
                                     </svg>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/matteo-leonesi-228867138/" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="https://www.linkedin.com/in/matteo-leonesi-228867138/" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black dark:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -109,7 +109,7 @@ function About() {
                                     </svg>
                                 </a>
 
-                                <a href="https://github.com/MatteoLeonesi" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                                <a href="https://github.com/MatteoLeonesi" type="button" className="rounded-full border-2 border-black text-black leading-normal uppercase hover:bg-black  dark:bg-white hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                                     <svg aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -128,6 +128,7 @@ function About() {
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>

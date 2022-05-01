@@ -2,7 +2,8 @@ import LegalPolicy from './LegalPolicy';
 
 const Footer = () => {
   return (
-    <footer className=' bg-neutral-100 dark:bg-neutral-900 absolute bottom-0 inset-x-0 h-52 sm:h-44 md:h-40 px-8 py-6 md:py-8'>
+    <footer className=' bg-neutral-100 dark:bg-neutral-900 absolute bottom-0 inset-x-0 h-52 sm:h-44 md:h-40 px-8 pb-10 py-6 md:py-8 '>
+
       <ul className='breakpoints-default flex justify-between items-center w-full'>
         <LegalPolicy />
         <li className='grid gap-4  text-center'>

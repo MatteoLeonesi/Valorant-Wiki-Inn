@@ -26,7 +26,7 @@ const Home = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <div className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid gap-8 grid-flow-row-dense grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6'>
           {agents &&
             agents.map((agent: Agent, index: number) => {
               // TODO duplicated data in the /agents api, 2 sova.

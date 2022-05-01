@@ -2,7 +2,7 @@
 
 .breakpoints-default {
   /* Breakpoints */
-  @apply mx-auto max-w-[480px] sm:max-w-[620px] md:max-w-[748px] lg:max-w-[1004px] xl:max-w-[1260px] 2xl:max-w-[1516px];
+  @apply mx-auto max-w-[480px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1260px] 2xl:max-w-[1516px];
 }
 
 .glass {

@@ -1,15 +1,29 @@
 @tailwind base;
 
-/* Your own custom base styles */
+.breakpoints-default {
+  /* Breakpoints */
+  @apply mx-auto max-w-[480px] sm:max-w-[620px] md:max-w-[748px] lg:max-w-[1004px] xl:max-w-[1260px] 2xl:max-w-[1516px];
+}
 
-/* Start purging... */
+.glass {
+  @apply bg-black/50 backdrop-blur-md;
+}
+
+.glass-white {
+  @apply bg-white/50 backdrop-blur-md;
+}
+
+.border-glass {
+  @apply border border-[#a8a8a8]/20;
+}
+
 @tailwind components;
-/* Stop purging. */
+.App {
+  @apply min-h-screen h-full w-full pt-[63px] sm:pt-[79px] relative pb-52 sm:pb-44 md:pb-40 bg-white dark:bg-neutral-800 text-black dark:text-white font-source;
+}
 
-/* Your own custom component styles */
+.nav {
+  @apply bg-white dark:bg-neutral-900 text-black dark:text-white border-neutral-200 dark:border-neutral-700;
+}
 
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */

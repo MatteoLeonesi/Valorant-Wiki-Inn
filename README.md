@@ -9,7 +9,7 @@
 </div>
 
 ## About The Project 
-### (Project Work in Progress)
+### (⚠️ Project Work in Progress)
 The aim of the project is to create a valorant wiki where users can check informations and meet other players (social section will be relased in the future). 
 
 If you want be part of the team check the issues and the contrinuting section ! ❤️

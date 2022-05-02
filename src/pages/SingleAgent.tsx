@@ -13,7 +13,7 @@ function SingleAgent(props: any) {
 
 
     return (
-        <div className=" rounded-lg p-10 verflow-hidden shadow-lg  dark:shadow-indigo-500/50 pt-40	">
+        <div className=" rounded-lg p-10 verflow-hidden shadow-lg  dark:shadow-indigo-500/50 pt-40 ">
             < div className="flex flex-col gap-1 text-center items-center  " >
                 <div className="  flex items-center justify-cente   ">
                     <div className=" text-center ">
@@ -29,8 +29,8 @@ function SingleAgent(props: any) {
                                 <ul className="mt-16 mb-20 flex justify-center text-center text-2xl">
                                     {
                                         abilities.map((a: Abilities, index: number) => {
-                                            // TODO duplicated data in the /agents api, 2 sova.
-                                            /* // TODO: use the Riot Api instead. -jb */
+
+
                                             return (
                                                 <li className="mx-6 flex flex-col"><span className="font-bold"></span>{a.displayName}</li>
                                             );

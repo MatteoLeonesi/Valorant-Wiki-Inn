@@ -2,11 +2,11 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' mr-10 ml-10 m-10 p-10 rounded-lg  overflow-hidden shadow-lg justify-center mx-auto dark:shadow-indigo-500/50'>
+        <div className=' mr-10 ml-10 m-10 p-10 rounded-lg  overflow-hidden shadow-lg justify-center mx-auto bg-neutral-100 dark:shadow-indigo-500/50'>
             <div className=" container mx-auto pb-10 px-6 md:px-12 xl:px-32" >
                 <div className="mb-16 text-center">
-                    <h2 className="mb-4 text-center text-2xl font-bold md:text-4xl">Team</h2>
-                    <p className=" lg:w-8/12 lg:mx-auto">We ❤️ Riot Games Legal Jibber Jabber Policy</p>
+                    <h2 className="mb-4 text-center text-2xl font-bold md:text-4xl">BUILDING TEAM</h2>
+                    <p className=" lg:w-8/12 lg:mx-auto">If you wannt be part of the team text us ! 🍻 </p>
                 </div>
                 <div className="grid gap-12 items-center md:grid-cols-2 ">
                     <div className="space-y-4 text-center ">

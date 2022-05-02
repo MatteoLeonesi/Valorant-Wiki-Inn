@@ -13,7 +13,7 @@ function SingleAgent(props: any) {
 
 
     return (
-        <div className=" rounded-lg p-10 verflow-hidden shadow-lg  dark:shadow-indigo-500/50 pt-40 ">
+        <div className=" rounded-lg p-10 verflow-hidden shadow-lg  dark:shadow-indigo-500/50 pt-30 ">
             < div className="flex flex-col gap-1 text-center items-center  " >
                 <div className="  flex items-center justify-cente   ">
                     <div className=" text-center ">

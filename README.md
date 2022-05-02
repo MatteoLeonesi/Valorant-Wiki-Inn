@@ -16,6 +16,7 @@ If you want be part of the team check the issues and the contrinuting section ! 
 
 ## Built With
 * [React & Typescript](https://react-typescript-cheatsheet.netlify.app/)
+* [Tailwind](https://tailwindcss.com/)
 * [Valorant Api](https://valorant-api.com/)
 
 ## Copyright

@@ -1,5 +1,5 @@
 <div align="center">
-   <h1 align="center">Defi Space Pirates</h3>
+   <h1 align="center">Valorant Wiki</h3>
 </div>
 <br>
 <div align="center">

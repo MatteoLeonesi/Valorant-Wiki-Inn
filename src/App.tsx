@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import SingleAgent from './pages/SingleAgent';
 import WeaponsPage from './pages/WeaponsPage';
+import SingleWeapon from "./pages/SingleWeapon"
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='weapons' element={<WeaponsPage />} />
         <Route path='about' element={<About />} />
         <Route path=':agentId' element={<SingleAgent />} />
+        <Route path=':weaponId' element={<SingleWeapon />} />
       </Routes>
       <Footer />
     </div>

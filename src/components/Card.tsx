@@ -39,7 +39,8 @@ const Card = (props: { agent: Agent }): any => {
             description: props.agent.description,
             developerName: props.agent.developerName,
             displayIcon: props.agent.displayIcon,
-            abilities: props.agent.abilities
+            abilities: props.agent.abilities,
+            role: props.agent.role?.displayName
           }}
           key={props.agent.uuid}
         >

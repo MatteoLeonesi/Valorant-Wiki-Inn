@@ -12,7 +12,7 @@
 ### (⚠️ Project Work in Progress)
 The aim of the project is to create a valorant wiki where users can check informations and meet other players (social section will be relased in the future). 
 
-If you want be part of the team check the issues and the contrinuting section ! ❤️
+If you want be part of the team check the issues and the Contributing section ! ❤️
 
 ## Built With
 * [React & Typescript](https://react-typescript-cheatsheet.netlify.app/)

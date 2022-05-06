@@ -37,7 +37,11 @@ const CardWeapons = (props: { weapon: Weapon }): any => {
                 <Link
                     style={{ display: "block", margin: "1rem 0" }}
                     to={{ pathname: `${props.weapon.displayName}` }}
-                    state={{ name: props.weapon.displayName }}
+                    state={{
+                        displayName: props.weapon.displayName,
+                        description: props.weapon.description,
+                        displayIcon: props.weapon.displayIcon,
+                    }}
                     key={props.weapon.uuid}
                 >
                     {props.weapon.displayName}

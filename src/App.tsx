@@ -17,7 +17,7 @@ const App = () => {
         <Route path='weapons' element={<WeaponsPage />} />
         <Route path='about' element={<About />} />
         <Route path=':agentId' element={<SingleAgent />} />
-        <Route path=':weaponId' element={<SingleWeapon />} />
+        <Route path='weapons/:weaponId' element={<SingleWeapon />} />
       </Routes>
       <Footer />
     </div>
